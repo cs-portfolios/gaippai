@@ -1,0 +1,432 @@
+/*
+Theme Name: Fitrst Theme re
+Theme URI: 
+Description:
+Author: Sodai Tasaki
+Author URI:
+Version:
+Tags:
+License:
+License URI:
+*/
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;/* -> 10px;*/
+    height: 100%;
+}
+
+body {
+    font-size: 1.6em;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-image: url(./images/usiro2.png);
+    background-size: contain;
+    background-position: center;
+}
+
+p,h1,h2,h3,h4,h5,dl {
+    margin: 0;
+}
+
+p {
+    font-family: serif;
+}
+
+.fs-1 {
+    font-size: 1.6rem;
+}
+
+.fs-1h {
+    font-size: 2.4rem;
+}
+
+.fs-2 {
+    font-size: 3.2rem;
+}
+
+.fs-3 {
+    font-size: 4.8rem;
+}
+
+.s-main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.s-bookpage {
+    width: 100%;
+    height: 95%;
+    margin-top: 5%;
+    display: flex;
+}
+
+.s-left {
+    width: 50%;
+}
+
+.s-right {
+    width: 50%;
+}
+
+/*ヘッダーナビ*/
+.navbar {
+    opacity: 0.75;
+    z-index: 8000;
+}
+
+.col-lg-4 {
+    text-align: center;
+}
+
+/* ヘッダー２ */
+.s-navigation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sn-logo {
+    height: auto;
+}
+
+.snl-image {
+    height: auto;
+    min-width: 167.5px;
+    max-width: 335px;
+    width: 100%;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+
+.snb-image {
+    height: auto;
+    width: 90px;
+    filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.5));
+}
+
+/* front-page */
+.s-f-main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+}
+
+.s-f-logo {
+    height: 20%;
+    text-align: center;
+}
+
+.sf-menu {
+    width: 80% !important;
+    margin-top: 15px;
+}
+
+.s-f-l-image {
+    max-width: 400px;
+    width: 30%;
+    min-width: 167.5px;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+
+.s-flame {
+    border: solid black 1px;
+}
+
+.s-border {
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.sfm-block {
+    height: fit-content;
+    padding: 0;
+    border: solid 10px rgba(255, 255, 255, 0.25);
+    position: relative;
+    border-radius: 25%;
+}
+
+.sfmb-image {
+    width: 100%;
+}
+
+.sfmb-modal {
+    position: absolute;
+    width: 103%;
+    height: 103%;
+    margin: auto;
+    top: 0;
+    left: -1.5%;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    opacity: 0;
+    border-radius: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: black 0px 0px 10px;
+}
+
+.s-relative-dammy {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.sfmbm-linkdammy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+.sfmbm-title {
+    color: snow !important;
+    text-decoration: none !important;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 1px 1px 4px grey;
+    font-weight: bold;
+}
+
+.sfmbm-title>a {
+    color: snow !important;
+    text-decoration: none !important;
+}
+
+.s-visible {
+    display: block;
+}
+
+.bgc-red-vp {
+    background-color: rgb(250, 216, 198);
+}
+
+.bgc-red-vp-s {
+    background-color: rgba(251, 218, 200, 0.5);
+}
+
+.bgc-blue-vp {
+    background-color: rgb(211, 237, 251);
+}
+
+.bgc-blue-vp-s {
+    background-color: rgba(211, 237, 251, 0.5);
+}
+
+.bgc-yellow-vp {
+    background-color: rgb(255, 252, 219);
+}
+
+.bgc-yellow-vp-s {
+    background-color: rgba(255, 252, 219, 0.5);
+}
+
+.bgc-green-vp {
+    background-color: rgb(213, 234, 216);
+}
+
+.bgc-green-vp-s {
+    background-color: rgba(213, 234, 216, 0.5);
+}
+
+.bgc-purple-vp {
+    background-color: rgb(210, 204, 230);
+}
+
+.bgc-purple-vp-s {
+    background-color: rgba(210, 204, 230, 0.5);
+}
+
+.bgc-pink-vp {
+    background-color: rgb(250, 220, 233);
+}
+
+.bgc-pink-vp-s {
+    background-color: rgba(250, 220, 233, 0.5);
+}
+
+.bgc-snow {
+    background-color: snow;
+}
+
+.bgc-red-s-s {
+    background-color: rgba(215, 0, 15, 0.8);
+}
+
+.bgc-blue-s-s {
+    background-color: rgba(0, 151, 219, 0.8);
+}
+
+.bgc-green-s-s {
+    background-color: rgba(0, 145, 64, 0.8);
+}
+
+.bgc-purple-s-s {
+    background-color: rgba(27, 28, 128, 0.8);
+}
+
+.bgc-yellow-s-s {
+    background-color: rgba(243, 225, 0, 0.8);
+}
+
+.bgc-pink-s-s {
+    background-color: rgba(214, 0, 119, 0.8);
+}
+
+.bgc-snow-s {
+    background-color: rgba(255, 250, 250, 0.9);
+}
+
+.sa-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.s-mm {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.sa-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sa-articlep {
+    display: flex;
+    justify-content: center;
+}
+
+.saa-comic {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+
+.saa-detail {
+    text-align: start;
+    width: 100%;
+    max-width: 640px;
+}
+
+.saa-playimage {
+    width: 50%;
+    max-width: 450px;
+    height: auto;
+}
+
+.saa-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 450px;
+    margin: 10px;
+}
+
+.s-meta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 640px;
+}
+
+.sm-overview {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.s-hr {
+    margin: 0 !important;
+}
+
+.s-tag {
+    border-radius: 13px;
+    padding: 2px 5px;
+    font-size: 12px;
+    border: solid black 1.1px;
+}
+
+.saa-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* introduction */
+.s-suesueimage {
+    height: 350px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.si-main {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: auto;
+    padding: 0;
+    margin-bottom: 20px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.si-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.sic-image {
+    display: flex;
+    justify-content: center;
+}
+
+/* フッター */
+.s-footer {
+    background-color: rgba(200,200,200,0.6);
+}
+
+.sf-footer {
+    background-color: lightgray;
+    border:solid 10px rgba(255, 255, 255, 0.6);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+.s-totop {
+    color: rgb(0, 151, 219) !important;
+    font-weight: bold;
+}
+
+.s-credit {
+    color: white;
+    font-weight: bold !important;
+}
